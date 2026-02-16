@@ -1,4 +1,4 @@
-# TODO — claude-seo
+# TODO — codex-seo
 
 ## Deferred from February 2026 Research Report
 

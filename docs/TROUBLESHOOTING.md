@@ -10,23 +10,23 @@
 
 1. Verify installation:
 ```bash
-ls ~/.claude/skills/seo/SKILL.md
+ls ~/.codex/skills/seo/SKILL.md
 ```
 
 2. Check SKILL.md has proper frontmatter:
 ```bash
-head -5 ~/.claude/skills/seo/SKILL.md
+head -5 ~/.codex/skills/seo/SKILL.md
 ```
 Should start with `---` followed by YAML.
 
-3. Restart Claude Code:
+3. Restart Codex CLI:
 ```bash
-claude
+codex
 ```
 
 4. Re-run installer:
 ```bash
-curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/claude-seo/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/codex-seo/main/install.sh | bash
 ```
 
 ---
@@ -37,7 +37,7 @@ curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/claude-seo/main/instal
 
 **Solution:**
 ```bash
-pip install -r ~/.claude/skills/seo/requirements.txt
+pip install -r ~/.codex/skills/seo/requirements.txt
 ```
 
 Or install individually:
@@ -70,9 +70,9 @@ python -m playwright install chromium
 
 **Solution:**
 ```bash
-chmod +x ~/.claude/skills/seo/scripts/*.py
-chmod +x ~/.claude/skills/seo/hooks/*.py
-chmod +x ~/.claude/skills/seo/hooks/*.sh
+chmod +x ~/.codex/skills/seo/scripts/*.py
+chmod +x ~/.codex/skills/seo/hooks/*.py
+chmod +x ~/.codex/skills/seo/hooks/*.sh
 ```
 
 ---
@@ -85,7 +85,7 @@ chmod +x ~/.claude/skills/seo/hooks/*.sh
 
 1. Verify hook is in settings:
 ```bash
-cat ~/.claude/settings.json
+cat ~/.codex/settings.json
 ```
 
 2. Ensure correct path:
@@ -98,7 +98,7 @@ cat ~/.claude/settings.json
         "hooks": [
           {
             "type": "command",
-            "command": "python3 ~/.claude/skills/seo/hooks/validate-schema.py \"$FILE_PATH\"",
+            "command": "python3 ~/.codex/skills/seo/hooks/validate-schema.py \"$FILE_PATH\"",
             "exitCodes": { "2": "block" }
           }
         ]
@@ -110,7 +110,7 @@ cat ~/.claude/settings.json
 
 3. Test hook directly:
 ```bash
-python3 ~/.claude/skills/seo/hooks/validate-schema.py test.html
+python3 ~/.codex/skills/seo/hooks/validate-schema.py test.html
 ```
 
 ---
@@ -123,17 +123,17 @@ python3 ~/.claude/skills/seo/hooks/validate-schema.py test.html
 
 1. Verify agent files exist:
 ```bash
-ls ~/.claude/agents/seo-*.md
+ls ~/.codex/agents/seo-*.md
 ```
 
 2. Check agent frontmatter:
 ```bash
-head -5 ~/.claude/agents/seo-technical.md
+head -5 ~/.codex/agents/seo-technical.md
 ```
 
 3. Re-install agents:
 ```bash
-cp /path/to/claude-seo/agents/*.md ~/.claude/agents/
+cp /path/to/codex-seo/agents/*.md ~/.codex/agents/
 ```
 
 ---
@@ -183,19 +183,19 @@ cp /path/to/claude-seo/agents/*.md ~/.claude/agents/
 
 2. **GitHub Issues:** Report bugs at the repository
 
-3. **Logs:** Check Claude Code's output for error details
+3. **Logs:** Check Codex CLI's output for error details
 
 ## Debug Mode
 
-To see detailed output, check Claude Code's internal logs or run scripts directly:
+To see detailed output, check Codex CLI's internal logs or run scripts directly:
 
 ```bash
 # Test fetch
-python3 ~/.claude/skills/seo/scripts/fetch_page.py https://example.com
+python3 ~/.codex/skills/seo/scripts/fetch_page.py https://example.com
 
 # Test parse
-python3 ~/.claude/skills/seo/scripts/parse_html.py page.html --json
+python3 ~/.codex/skills/seo/scripts/parse_html.py page.html --json
 
 # Test screenshot
-python3 ~/.claude/skills/seo/scripts/capture_screenshot.py https://example.com
+python3 ~/.codex/skills/seo/scripts/capture_screenshot.py https://example.com
 ```

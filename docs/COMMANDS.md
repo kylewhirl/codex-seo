@@ -2,7 +2,7 @@
 
 ## Overview
 
-All Claude SEO commands start with `/seo` followed by a subcommand.
+Codex SEO is triggered through natural-language prompts. You can still use `/seo`-style shorthand if your Codex setup supports slash commands.
 
 ## Command List
 

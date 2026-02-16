@@ -42,7 +42,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-02-07
 
 ### Added
-- Initial release of Claude SEO
+- Initial release of Codex SEO
 - 9 specialized skills: audit, page, sitemap, schema, images, technical, content, geo, plan
 - 6 subagents for parallel analysis: seo-technical, seo-content, seo-schema, seo-sitemap, seo-performance, seo-visual
 - Industry templates: SaaS, local service, e-commerce, publisher, agency, generic
@@ -64,8 +64,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Bounded Python dependency pinning with CVE-aware minimums (lxml >= 5.3.2)
 
 ### Architecture
-- Follows Anthropic's official Claude Code skill specification (February 2026)
+- Follows Codex skill conventions (February 2026)
 - Standard directory layout: `scripts/`, `references/`, `assets/`
 - Valid hook matchers (tool name only, no argument patterns)
 - Correct subagent frontmatter fields (name, description, tools)
-- CLI command is `claude` (not `claude-code`)
+- CLI command is `codex`

@@ -1,14 +1,14 @@
 <!-- Updated: 2026-02-08 -->
 
-![Claude SEO](screenshots/cover-image.jpeg)
+![Codex SEO](screenshots/cover-image.jpeg)
 
-# Claude SEO
+# Codex SEO
 
-Comprehensive SEO analysis skill for Claude Code. Covers technical SEO, on-page analysis, content quality (E-E-A-T), schema markup, image optimization, sitemap architecture, AI search optimization (GEO), and strategic planning.
+Comprehensive SEO analysis skill for Codex CLI. Covers technical SEO, on-page analysis, content quality (E-E-A-T), schema markup, image optimization, sitemap architecture, AI search optimization (GEO), and strategic planning.
 
 ![SEO Command Demo](screenshots/seo-command-demo.gif)
 
-[![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-blue)](https://claude.ai/claude-code)
+[![Codex CLI Skill](https://img.shields.io/badge/Codex%20CLI-Skill-blue)](https://platform.openai.com/docs/codex)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## Installation
@@ -16,28 +16,28 @@ Comprehensive SEO analysis skill for Claude Code. Covers technical SEO, on-page 
 ### One-Command Install (Unix/macOS/Linux)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/claude-seo/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/codex-seo/main/install.sh | bash
 ```
 
 ### Manual Install
 
 ```bash
-git clone https://github.com/AgriciDaniel/claude-seo.git
-cd claude-seo
+git clone https://github.com/AgriciDaniel/codex-seo.git
+cd codex-seo
 ./install.sh
 ```
 
 ### Windows
 
 ```powershell
-irm https://raw.githubusercontent.com/AgriciDaniel/claude-seo/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/AgriciDaniel/codex-seo/main/install.ps1 | iex
 ```
 
 ## Quick Start
 
 ```bash
-# Start Claude Code
-claude
+# Start Codex CLI
+codex
 
 # Run a full site audit
 /seo audit https://example.com
@@ -156,9 +156,9 @@ New for 2026 - optimize for:
 ## Architecture
 
 ```
-~/.claude/skills/seo/         # Main skill
-~/.claude/skills/seo-*/       # Sub-skills (12 total)
-~/.claude/agents/seo-*.md     # Subagents (6 total)
+~/.codex/skills/seo/         # Main skill
+~/.codex/skills/seo-*/       # Sub-skills (12 total)
+~/.codex/agents/seo-*.md     # Subagents (6 total)
 ```
 
 ### Video & Live Schema (New)
@@ -181,13 +181,13 @@ See `schema/templates.json` for ready-to-use JSON-LD snippets.
 ## Requirements
 
 - Python 3.8+
-- Claude Code CLI
+- Codex CLI
 - Optional: Playwright for screenshots
 
 ## Uninstall
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/claude-seo/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/codex-seo/main/uninstall.sh | bash
 ```
 
 ### MCP Integrations
@@ -212,4 +212,4 @@ Contributions welcome! Please read the guidelines in `docs/` before submitting P
 
 ---
 
-Built for Claude Code by [@AgriciDaniel](https://github.com/AgriciDaniel)
+Built for Codex CLI by [@AgriciDaniel](https://github.com/AgriciDaniel)
