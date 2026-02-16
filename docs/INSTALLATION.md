@@ -74,7 +74,7 @@ codex
 2. Check that the skill is loaded:
 
 ```
-/seo
+$seo
 ```
 
 You should see a help message or prompt for a URL.
