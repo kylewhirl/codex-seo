@@ -4,7 +4,7 @@
 
 ### Skill Not Loading
 
-**Symptom:** `/seo` command not recognized
+**Symptom:** `$seo` skill invocation not recognized
 
 **Solutions:**
 
@@ -172,7 +172,7 @@ cp /path/to/codex-seo/agents/*.md ~/.codex/agents/
 
 1. Audit crawls up to 500 pages — large sites take time
 2. Subagents run in parallel to speed up analysis
-3. For faster checks, use `/seo page` on specific URLs
+3. For faster checks, use `$seo-page` on specific URLs
 4. Check if site has slow response times
 
 ---

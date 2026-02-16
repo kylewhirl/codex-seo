@@ -30,22 +30,22 @@ and 6 subagents.
 
 | Command | What it does |
 |---------|-------------|
-| `/seo audit <url>` | Full website audit with parallel subagent delegation |
-| `/seo page <url>` | Deep single-page analysis |
-| `/seo sitemap <url or generate>` | Analyze or generate XML sitemaps |
-| `/seo schema <url>` | Detect, validate, and generate Schema.org markup |
-| `/seo images <url>` | Image optimization analysis |
-| `/seo technical <url>` | Technical SEO audit (8 categories) |
-| `/seo content <url>` | E-E-A-T and content quality analysis |
-| `/seo geo <url>` | AI Overviews / Generative Engine Optimization |
-| `/seo plan <business-type>` | Strategic SEO planning |
-| `/seo programmatic [url\|plan]` | Programmatic SEO analysis and planning |
-| `/seo competitor-pages [url\|generate]` | Competitor comparison page generation |
-| `/seo hreflang [url]` | Hreflang/i18n SEO audit and generation |
+| `$seo-audit <url>` | Full website audit with parallel subagent delegation |
+| `$seo-page <url>` | Deep single-page analysis |
+| `$seo-sitemap <url or generate>` | Analyze or generate XML sitemaps |
+| `$seo-schema <url>` | Detect, validate, and generate Schema.org markup |
+| `$seo-images <url>` | Image optimization analysis |
+| `$seo-technical <url>` | Technical SEO audit (8 categories) |
+| `$seo-content <url>` | E-E-A-T and content quality analysis |
+| `$seo-geo <url>` | AI Overviews / Generative Engine Optimization |
+| `$seo-plan <business-type>` | Strategic SEO planning |
+| `$seo-programmatic [url\|plan]` | Programmatic SEO analysis and planning |
+| `$seo-competitor-pages [url\|generate]` | Competitor comparison page generation |
+| `$seo-hreflang [url]` | Hreflang/i18n SEO audit and generation |
 
 ## Orchestration Logic
 
-When the user invokes `/seo audit`, delegate to subagents in parallel:
+When the user invokes `$seo-audit`, delegate to subagents in parallel:
 1. Detect business type (SaaS, local, ecommerce, publisher, agency, other)
 2. Spawn subagents: seo-technical, seo-content, seo-schema, seo-sitemap, seo-performance, seo-visual
 3. Collect results and generate unified report with SEO Health Score (0-100)
