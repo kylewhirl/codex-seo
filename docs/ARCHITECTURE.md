@@ -2,12 +2,12 @@
 
 ## Overview
 
-Claude SEO follows Anthropic's official Claude Code skill specification with a modular, multi-skill architecture.
+Codex SEO follows Codex skill conventions with a modular, multi-skill architecture.
 
 ## Directory Structure
 
 ```
-~/.claude/
+~/.codex/
 ├── skills/
 │   ├── seo/              # Main orchestrator skill
 │   │   ├── SKILL.md          # Entry point with routing logic

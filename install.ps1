@@ -1,11 +1,11 @@
-# Claude SEO Installer for Windows
+# Codex SEO Installer for Windows
 # PowerShell installation script
 
 $ErrorActionPreference = "Stop"
 
 Write-Host "════════════════════════════════════════" -ForegroundColor Cyan
-Write-Host "║   Claude SEO - Installer             ║" -ForegroundColor Cyan
-Write-Host "║   Claude Code SEO Skill              ║" -ForegroundColor Cyan
+Write-Host "║   Codex SEO - Installer             ║" -ForegroundColor Cyan
+Write-Host "║   Codex CLI SEO Skill              ║" -ForegroundColor Cyan
 Write-Host "════════════════════════════════════════" -ForegroundColor Cyan
 Write-Host ""
 
@@ -27,21 +27,22 @@ try {
 }
 
 # Set paths
-$SkillDir = "$env:USERPROFILE\.claude\skills\seo"
-$AgentDir = "$env:USERPROFILE\.claude\agents"
-$RepoUrl = "https://github.com/AgriciDaniel/claude-seo"
+$CodexHome = if ($env:CODEX_HOME) { $env:CODEX_HOME } else { "$env:USERPROFILE\.codex" }
+$SkillDir = Join-Path $CodexHome "skills\seo"
+$AgentDir = Join-Path $CodexHome "agents"
+$RepoUrl = "https://github.com/AgriciDaniel/codex-seo"
 
 # Create directories
 New-Item -ItemType Directory -Force -Path $SkillDir | Out-Null
 New-Item -ItemType Directory -Force -Path $AgentDir | Out-Null
 
 # Clone to temp directory
-$TempDir = Join-Path $env:TEMP "claude-seo-install"
+$TempDir = Join-Path $env:TEMP "codex-seo-install"
 if (Test-Path $TempDir) {
     Remove-Item -Recurse -Force $TempDir
 }
 
-Write-Host "↓ Downloading Claude SEO..." -ForegroundColor Yellow
+Write-Host "↓ Downloading Codex SEO..." -ForegroundColor Yellow
 git clone --depth 1 $RepoUrl $TempDir 2>$null
 
 # Copy skill files
@@ -52,7 +53,7 @@ Copy-Item -Recurse -Force "$TempDir\seo\*" $SkillDir
 $SkillsPath = "$TempDir\skills"
 if (Test-Path $SkillsPath) {
     Get-ChildItem -Directory $SkillsPath | ForEach-Object {
-        $target = "$env:USERPROFILE\.claude\skills\$($_.Name)"
+        $target = Join-Path $CodexHome "skills\$($_.Name)"
         New-Item -ItemType Directory -Force -Path $target | Out-Null
         Copy-Item -Recurse -Force "$($_.FullName)\*" $target
     }
@@ -114,8 +115,8 @@ try {
 Remove-Item -Recurse -Force $TempDir
 
 Write-Host ""
-Write-Host "✓ Claude SEO installed successfully!" -ForegroundColor Green
+Write-Host "✓ Codex SEO installed successfully!" -ForegroundColor Green
 Write-Host ""
 Write-Host "Usage:" -ForegroundColor Cyan
-Write-Host "  1. Start Claude Code:  claude"
+Write-Host "  1. Start Codex CLI:  codex"
 Write-Host "  2. Run commands:       /seo audit https://example.com"
