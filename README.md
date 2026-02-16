@@ -6,6 +6,8 @@
 
 Comprehensive SEO analysis skill for Codex CLI. Covers technical SEO, on-page analysis, content quality (E-E-A-T), schema markup, image optimization, sitemap architecture, AI search optimization (GEO), and strategic planning.
 
+> Original project by [@AgriciDaniel](https://github.com/AgriciDaniel) for Claude: https://github.com/AgriciDaniel/claude-seo. Codex version and ongoing maintenance by [@kylewhirl](https://github.com/kylewhirl).
+
 ![SEO Command Demo](screenshots/seo-command-demo.gif)
 
 [![Codex CLI Skill](https://img.shields.io/badge/Codex%20CLI-Skill-blue)](https://platform.openai.com/docs/codex)
@@ -16,13 +18,13 @@ Comprehensive SEO analysis skill for Codex CLI. Covers technical SEO, on-page an
 ### One-Command Install (Unix/macOS/Linux)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/codex-seo/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/kylewhirl/codex-seo/main/install.sh | bash
 ```
 
 ### Manual Install
 
 ```bash
-git clone https://github.com/AgriciDaniel/codex-seo.git
+git clone https://github.com/kylewhirl/codex-seo.git
 cd codex-seo
 ./install.sh
 ```
@@ -30,7 +32,7 @@ cd codex-seo
 ### Windows
 
 ```powershell
-irm https://raw.githubusercontent.com/AgriciDaniel/codex-seo/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/kylewhirl/codex-seo/main/install.ps1 | iex
 ```
 
 ## Quick Start
@@ -187,7 +189,7 @@ See `schema/templates.json` for ready-to-use JSON-LD snippets.
 ## Uninstall
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/codex-seo/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/kylewhirl/codex-seo/main/uninstall.sh | bash
 ```
 
 ### MCP Integrations
@@ -212,4 +214,4 @@ Contributions welcome! Please read the guidelines in `docs/` before submitting P
 
 ---
 
-Built for Codex CLI by [@AgriciDaniel](https://github.com/AgriciDaniel)
+Originally created for Claude by [@AgriciDaniel](https://github.com/AgriciDaniel) at https://github.com/AgriciDaniel/claude-seo; built for Codex CLI by [@kylewhirl](https://github.com/kylewhirl).

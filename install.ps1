@@ -30,7 +30,7 @@ try {
 $CodexHome = if ($env:CODEX_HOME) { $env:CODEX_HOME } else { "$env:USERPROFILE\.codex" }
 $SkillDir = Join-Path $CodexHome "skills\seo"
 $AgentDir = Join-Path $CodexHome "agents"
-$RepoUrl = "https://github.com/AgriciDaniel/codex-seo"
+$RepoUrl = "https://github.com/kylewhirl/codex-seo"
 
 # Create directories
 New-Item -ItemType Directory -Force -Path $SkillDir | Out-Null

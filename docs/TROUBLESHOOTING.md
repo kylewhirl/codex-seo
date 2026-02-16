@@ -26,7 +26,7 @@ codex
 
 4. Re-run installer:
 ```bash
-curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/codex-seo/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/kylewhirl/codex-seo/main/install.sh | bash
 ```
 
 ---

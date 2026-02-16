@@ -8,7 +8,7 @@ main() {
     CODEX_HOME_DIR="${CODEX_HOME:-${HOME}/.codex}"
     SKILL_DIR="${CODEX_HOME_DIR}/skills/seo"
     AGENT_DIR="${CODEX_HOME_DIR}/agents"
-    REPO_URL="https://github.com/AgriciDaniel/codex-seo"
+    REPO_URL="https://github.com/kylewhirl/codex-seo"
 
     echo "════════════════════════════════════════"
     echo "║   Codex SEO - Installer             ║"
@@ -97,7 +97,7 @@ main() {
     echo "  1. Start Codex CLI:  codex"
     echo "  2. Run commands:       /seo audit https://example.com"
     echo ""
-    echo "To uninstall: curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/codex-seo/main/uninstall.sh | bash"
+    echo "To uninstall: curl -fsSL https://raw.githubusercontent.com/kylewhirl/codex-seo/main/uninstall.sh | bash"
 }
 
 main "$@"
