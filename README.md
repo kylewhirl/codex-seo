@@ -42,24 +42,24 @@ irm https://raw.githubusercontent.com/kylewhirl/codex-seo/main/install.ps1 | iex
 codex
 
 # Run a full site audit
-/seo audit https://example.com
+$seo-audit https://example.com
 
 # Analyze a single page
-/seo page https://example.com/about
+$seo-page https://example.com/about
 
 # Check schema markup
-/seo schema https://example.com
+$seo-schema https://example.com
 
 # Generate a sitemap
-/seo sitemap generate
+$seo-sitemap generate
 
 # Optimize for AI search
-/seo geo https://example.com
+$seo-geo https://example.com
 ```
 ### Demo:
 [Watch the full demo on YouTube](https://www.youtube.com/watch?v=COMnNlUakQk)
 
-**`/seo audit` — full site audit with parallel subagents:**
+**`$seo-audit` — full site audit with parallel subagents:**
 
 ![SEO Audit Demo](screenshots/seo-audit-demo.gif)
 
@@ -67,21 +67,21 @@ codex
 
 | Command | Description |
 |---------|-------------|
-| `/seo audit <url>` | Full website audit with parallel subagent delegation |
-| `/seo page <url>` | Deep single-page analysis |
-| `/seo sitemap <url>` | Analyze existing XML sitemap |
-| `/seo sitemap generate` | Generate new sitemap with industry templates |
-| `/seo schema <url>` | Detect, validate, and generate Schema.org markup |
-| `/seo images <url>` | Image optimization analysis |
-| `/seo technical <url>` | Technical SEO audit (8 categories) |
-| `/seo content <url>` | E-E-A-T and content quality analysis |
-| `/seo geo <url>` | AI Overviews / Generative Engine Optimization |
-| `/seo plan <type>` | Strategic SEO planning (saas, local, ecommerce, publisher, agency) |
-| `/seo programmatic <url>` | Programmatic SEO analysis and planning |
-| `/seo competitor-pages <url>` | Competitor comparison page generation |
-| `/seo hreflang <url>` | Hreflang/i18n SEO audit and generation |
+| `$seo-audit <url>` | Full website audit with parallel subagent delegation |
+| `$seo-page <url>` | Deep single-page analysis |
+| `$seo-sitemap <url>` | Analyze existing XML sitemap |
+| `$seo-sitemap generate` | Generate new sitemap with industry templates |
+| `$seo-schema <url>` | Detect, validate, and generate Schema.org markup |
+| `$seo-images <url>` | Image optimization analysis |
+| `$seo-technical <url>` | Technical SEO audit (8 categories) |
+| `$seo-content <url>` | E-E-A-T and content quality analysis |
+| `$seo-geo <url>` | AI Overviews / Generative Engine Optimization |
+| `$seo-plan <type>` | Strategic SEO planning (saas, local, ecommerce, publisher, agency) |
+| `$seo-programmatic <url>` | Programmatic SEO analysis and planning |
+| `$seo-competitor-pages <url>` | Competitor comparison page generation |
+| `$seo-hreflang <url>` | Hreflang/i18n SEO audit and generation |
 
-### `/seo programmatic [url|plan]`
+### `$seo-programmatic [url|plan]`
 **Programmatic SEO Analysis & Planning**
 
 Build SEO pages at scale from data sources with quality safeguards.
@@ -93,7 +93,7 @@ Build SEO pages at scale from data sources with quality safeguards.
 - Canonical strategy and index bloat prevention
 - Quality gates: ⚠️ WARNING at 100+ pages, 🛑 HARD STOP at 500+ without audit
 
-### `/seo competitor-pages [url|generate]`
+### `$seo-competitor-pages [url|generate]`
 **Competitor Comparison Page Generator**
 
 Create high-converting "X vs Y" and "alternatives to X" pages.
@@ -105,7 +105,7 @@ Create high-converting "X vs Y" and "alternatives to X" pages.
 - Keyword targeting for comparison intent queries
 - Fairness guidelines for accurate competitor representation
 
-### `/seo hreflang [url]`
+### `$seo-hreflang [url]`
 **Hreflang / i18n SEO Audit & Generation**
 
 Validate and generate hreflang tags for multi-language sites.
@@ -174,9 +174,9 @@ Additional schema types for video content, live streaming, and key moments:
 See `schema/templates.json` for ready-to-use JSON-LD snippets.
 
 ### Recently Added
-- Programmatic SEO skill (`/seo programmatic`)
-- Competitor comparison pages skill (`/seo competitor-pages`)
-- Multi-language hreflang validation (`/seo hreflang`)
+- Programmatic SEO skill (`$seo-programmatic`)
+- Competitor comparison pages skill (`$seo-competitor-pages`)
+- Multi-language hreflang validation (`$seo-hreflang`)
 - Video & Live schema types (VideoObject, BroadcastEvent, Clip, SeekToAction)
 - Google SEO quick-reference guide
 
