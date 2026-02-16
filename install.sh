@@ -95,7 +95,7 @@ main() {
     echo ""
     echo "Usage:"
     echo "  1. Start Codex CLI:  codex"
-    echo "  2. Run commands:       /seo audit https://example.com"
+    echo "  2. Run commands:       \$seo-audit https://example.com"
     echo ""
     echo "To uninstall: curl -fsSL https://raw.githubusercontent.com/kylewhirl/codex-seo/main/uninstall.sh | bash"
 }

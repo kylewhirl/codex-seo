@@ -2,17 +2,17 @@
 
 ## Overview
 
-Codex SEO is triggered through natural-language prompts. You can still use `/seo`-style shorthand if your Codex setup supports slash commands.
+Codex SEO can be triggered through natural-language prompts or direct skill invocation with `$skill-name`.
 
 ## Command List
 
-### `/seo audit <url>`
+### `$seo-audit <url>`
 
 Full website SEO audit with parallel analysis.
 
 **Example:**
 ```
-/seo audit https://example.com
+$seo-audit https://example.com
 ```
 
 **What it does:**
@@ -29,13 +29,13 @@ Full website SEO audit with parallel analysis.
 
 ---
 
-### `/seo page <url>`
+### `$seo-page <url>`
 
 Deep single-page analysis.
 
 **Example:**
 ```
-/seo page https://example.com/about
+$seo-page https://example.com/about
 ```
 
 **What it analyzes:**
@@ -48,13 +48,13 @@ Deep single-page analysis.
 
 ---
 
-### `/seo technical <url>`
+### `$seo-technical <url>`
 
 Technical SEO audit across 8 categories.
 
 **Example:**
 ```
-/seo technical https://example.com
+$seo-technical https://example.com
 ```
 
 **Categories:**
@@ -69,13 +69,13 @@ Technical SEO audit across 8 categories.
 
 ---
 
-### `/seo content <url>`
+### `$seo-content <url>`
 
 E-E-A-T and content quality analysis.
 
 **Example:**
 ```
-/seo content https://example.com/blog/post
+$seo-content https://example.com/blog/post
 ```
 
 **What it evaluates:**
@@ -88,13 +88,13 @@ E-E-A-T and content quality analysis.
 
 ---
 
-### `/seo schema <url>`
+### `$seo-schema <url>`
 
 Schema markup detection, validation, and generation.
 
 **Example:**
 ```
-/seo schema https://example.com
+$seo-schema https://example.com
 ```
 
 **What it does:**
@@ -105,13 +105,13 @@ Schema markup detection, validation, and generation.
 
 ---
 
-### `/seo geo <url>`
+### `$seo-geo <url>`
 
 AI Overviews / Generative Engine Optimization.
 
 **Example:**
 ```
-/seo geo https://example.com/blog/guide
+$seo-geo https://example.com/blog/guide
 ```
 
 **What it analyzes:**
@@ -123,13 +123,13 @@ AI Overviews / Generative Engine Optimization.
 
 ---
 
-### `/seo images <url>`
+### `$seo-images <url>`
 
 Image optimization analysis.
 
 **Example:**
 ```
-/seo images https://example.com
+$seo-images https://example.com
 ```
 
 **What it checks:**
@@ -142,13 +142,13 @@ Image optimization analysis.
 
 ---
 
-### `/seo sitemap <url>`
+### `$seo-sitemap <url>`
 
 Analyze existing XML sitemap.
 
 **Example:**
 ```
-/seo sitemap https://example.com/sitemap.xml
+$seo-sitemap https://example.com/sitemap.xml
 ```
 
 **What it validates:**
@@ -161,13 +161,13 @@ Analyze existing XML sitemap.
 
 ---
 
-### `/seo sitemap generate`
+### `$seo-sitemap generate`
 
 Generate new sitemap with industry templates.
 
 **Example:**
 ```
-/seo sitemap generate
+$seo-sitemap generate
 ```
 
 **Process:**
@@ -179,7 +179,7 @@ Generate new sitemap with industry templates.
 
 ---
 
-### `/seo plan <type>`
+### `$seo-plan <type>`
 
 Strategic SEO planning.
 
@@ -187,7 +187,7 @@ Strategic SEO planning.
 
 **Example:**
 ```
-/seo plan saas
+$seo-plan saas
 ```
 
 **What it creates:**
@@ -199,14 +199,14 @@ Strategic SEO planning.
 
 ---
 
-### `/seo competitor-pages [url|generate]`
+### `$seo-competitor-pages [url|generate]`
 
 Competitor comparison page generation.
 
 **Examples:**
 ```
-/seo competitor-pages https://example.com/vs/competitor
-/seo competitor-pages generate
+$seo-competitor-pages https://example.com/vs/competitor
+$seo-competitor-pages generate
 ```
 
 **Capabilities:**
@@ -219,13 +219,13 @@ Competitor comparison page generation.
 
 ---
 
-### `/seo hreflang [url]`
+### `$seo-hreflang [url]`
 
 Hreflang and international SEO audit and generation.
 
 **Example:**
 ```
-/seo hreflang https://example.com
+$seo-hreflang https://example.com
 ```
 
 **Capabilities:**
@@ -239,14 +239,14 @@ Hreflang and international SEO audit and generation.
 
 ---
 
-### `/seo programmatic [url|plan]`
+### `$seo-programmatic [url|plan]`
 
 Programmatic SEO analysis and planning for pages generated at scale.
 
 **Examples:**
 ```
-/seo programmatic https://example.com/tools/
-/seo programmatic plan
+$seo-programmatic https://example.com/tools/
+$seo-programmatic plan
 ```
 
 **Capabilities:**
@@ -263,16 +263,16 @@ Programmatic SEO analysis and planning for pages generated at scale.
 
 | Command | Use Case |
 |---------|----------|
-| `/seo audit <url>` | Full website audit |
-| `/seo competitor-pages [url\|generate]` | Competitor comparison pages |
-| `/seo content <url>` | E-E-A-T analysis |
-| `/seo geo <url>` | AI search optimization |
-| `/seo hreflang [url]` | Hreflang/i18n SEO audit |
-| `/seo images <url>` | Image optimization |
-| `/seo page <url>` | Single page analysis |
-| `/seo plan <type>` | Strategic planning |
-| `/seo programmatic [url\|plan]` | Programmatic SEO analysis |
-| `/seo schema <url>` | Schema validation |
-| `/seo sitemap <url>` | Sitemap validation |
-| `/seo sitemap generate` | Create new sitemap |
-| `/seo technical <url>` | Technical SEO check |
+| `$seo-audit <url>` | Full website audit |
+| `$seo-competitor-pages [url\|generate]` | Competitor comparison pages |
+| `$seo-content <url>` | E-E-A-T analysis |
+| `$seo-geo <url>` | AI search optimization |
+| `$seo-hreflang [url]` | Hreflang/i18n SEO audit |
+| `$seo-images <url>` | Image optimization |
+| `$seo-page <url>` | Single page analysis |
+| `$seo-plan <type>` | Strategic planning |
+| `$seo-programmatic [url\|plan]` | Programmatic SEO analysis |
+| `$seo-schema <url>` | Schema validation |
+| `$seo-sitemap <url>` | Sitemap validation |
+| `$seo-sitemap generate` | Create new sitemap |
+| `$seo-technical <url>` | Technical SEO check |

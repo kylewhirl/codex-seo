@@ -119,4 +119,4 @@ Write-Host "✓ Codex SEO installed successfully!" -ForegroundColor Green
 Write-Host ""
 Write-Host "Usage:" -ForegroundColor Cyan
 Write-Host "  1. Start Codex CLI:  codex"
-Write-Host "  2. Run commands:       /seo audit https://example.com"
+Write-Host "  2. Run commands:       `$seo-audit https://example.com"

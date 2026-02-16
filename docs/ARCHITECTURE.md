@@ -81,7 +81,7 @@ Reference files contain static data loaded on-demand to avoid bloating the main 
 
 ## Orchestration Flow
 
-### Full Audit (`/seo audit`)
+### Full Audit (`$seo-audit`)
 
 ```
 User Request
@@ -120,7 +120,7 @@ User Request
 ### Individual Command
 
 ```
-User Request (e.g., /seo page)
+User Request (e.g., $seo-page)
     │
     ▼
 ┌─────────────────┐
