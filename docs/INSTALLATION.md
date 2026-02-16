@@ -1,5 +1,7 @@
 # Installation Guide
 
+> Original project credit: [@AgriciDaniel](https://github.com/AgriciDaniel), Claude repo: https://github.com/AgriciDaniel/claude-seo. Codex build and this maintained fork: [@kylewhirl](https://github.com/kylewhirl).
+
 ## Prerequisites
 
 - **Python 3.8+** with pip
@@ -14,13 +16,13 @@ Optional:
 ### Unix/macOS/Linux
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/codex-seo/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/kylewhirl/codex-seo/main/install.sh | bash
 ```
 
 ### Windows (PowerShell)
 
 ```powershell
-irm https://raw.githubusercontent.com/AgriciDaniel/codex-seo/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/kylewhirl/codex-seo/main/install.ps1 | iex
 ```
 
 ## Manual Installation
@@ -28,7 +30,7 @@ irm https://raw.githubusercontent.com/AgriciDaniel/codex-seo/main/install.ps1 | 
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/AgriciDaniel/codex-seo.git
+git clone https://github.com/kylewhirl/codex-seo.git
 cd codex-seo
 ```
 
@@ -80,7 +82,7 @@ You should see a help message or prompt for a URL.
 ## Uninstallation
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/codex-seo/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/kylewhirl/codex-seo/main/uninstall.sh | bash
 ```
 
 Or manually:
@@ -108,10 +110,10 @@ To upgrade to the latest version:
 
 ```bash
 # Uninstall current version
-curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/codex-seo/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/kylewhirl/codex-seo/main/uninstall.sh | bash
 
 # Install new version
-curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/codex-seo/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/kylewhirl/codex-seo/main/install.sh | bash
 ```
 
 ## Troubleshooting
